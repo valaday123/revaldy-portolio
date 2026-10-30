@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Revaldy Risqi Firmansyah">
+  <title>Revaldy Risqi Firmansyah | Portfolio</title>
+
+  <script>
+    try {
+      const saved = localStorage.getItem("theme");
+      const systemDark = matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme =
+        saved || (systemDark ? "dark" : "light");
+    } catch (e) {
+      document.documentElement.dataset.theme = "dark";
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">Revaldy<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle"
+        aria-label="Ganti tema" type="button">
+        <span id="themeIcon">☀️</span>
+      </button>
+
+      <button class="icon-btn menu-toggle" id="menuToggle"
+        aria-label="Buka menu" aria-expanded="false"
+        aria-controls="navLinks" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
+
+        <h1>Hi, I'm <span>Revaldy Risqi Firmansyah</span></h1>
+
+        <h2>I'm a <span id="typing"></span></h2>
+
+        <p>
+          Saya memiliki ketertarikan dalam bidang bisnis
+          digital, desain kreatif, dan komunikasi.
+          Selamat datang di website portofolio pribadi saya.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            Lihat Proyek
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-wrapper reveal">
+        <img src="profil.jpeg"
+          alt="Foto Revaldy Risqi Firmansyah"
+          class="profile-image">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">GET TO KNOW ME</span>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-box reveal">
+        <h3>Halo! Saya Revaldy Risqi Firmansyah</h3>
+        <p>
+          Saya merupakan individu yang antusias terhadap
+          perkembangan teknologi, bisnis digital,
+          kreativitas, dan komunikasi.
+        </p>
+        <p>
+          Saya senang mempelajari hal baru, meningkatkan
+          keterampilan, serta mengembangkan ide-ide kreatif
+          yang dapat memberikan manfaat.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="section-heading reveal">
+        <span class="eyebrow">WHAT I CAN DO</span>
+        <h2>My <span>Skills</span></h2>
+        <p>Kemampuan dan keterampilan saya.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">📈</div>
+          <h3>Digital Business</h3>
+          <p>
+            Pengelolaan bisnis digital, pemasaran online,
+            penjualan produk digital, dan pelayanan pelanggan.
+          </p>
+          <div class="tags">
+            <span>Digital Marketing</span>
+            <span>Online Sales</span>
+            <span>Business</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>Creative Design</h3>
+          <p>
+            Mengembangkan ide kreatif, membuat desain visual,
+            dan menciptakan konten digital yang menarik.
+          </p>
+          <div class="tags">
+            <span>Graphic Design</span>
+            <span>Content Design</span>
+            <span>Creativity</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">💬</div>
+          <h3>Communication</h3>
+          <p>
+            Kemampuan berkomunikasi, bekerja sama dalam tim,
+            menyampaikan ide, dan memecahkan masalah.
+          </p>
+          <div class="tags">
+            <span>Teamwork</span>
+            <span>Public Speaking</span>
+            <span>Problem Solving</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">MY JOURNEY</span>
+        <h2>My <span>Experience</span></h2>
+        <p>Dokumentasi pengalaman saya.</p>
+      </div>
+
+      <div class="experience-grid">
+
+        <article class="experience-card reveal">
+          <img src="images1.jpeg"
+            alt="Dokumentasi penjualan produk digital"
+            loading="lazy">
+          <div class="card-content">
+            <h3>Digital Product</h3>
+            <p>
+              Pengalaman mengelola transaksi penjualan
+              produk digital dan memberikan pelayanan
+              kepada pelanggan.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <img src="images2.jpeg"
+            alt="Dokumentasi pelayanan pelanggan"
+            loading="lazy">
+          <div class="card-content">
+            <h3>Customer Service</h3>
+            <p>
+              Berkomunikasi dengan pelanggan,
+              memberikan informasi produk, dan membantu
+              menyelesaikan kebutuhan pelanggan.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MY PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="section-heading reveal">
+        <span class="eyebrow">MY CREATIVE WORK</span>
+        <h2>My <span>Projects</span></h2>
+        <p>Kumpulan karya kreatif foto dan video saya.</p>
+      </div>
+
+      <!-- 2 CREATIVE PROJECT PHOTOS -->
+      <div class="project-intro reveal">
+        <h3>🎨 Creative Project</h3>
+        <p>
+          Galeri karya desain dan dokumentasi kreatif.
+          Klik foto untuk memperbesar.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <button class="gallery-item reveal" type="button"
+          data-image="proyek1.jpeg"
+          data-title="Creative Project 01"
+          aria-label="Lihat Creative Project 01">
+          <img src="proyek1.jpeg"
+            alt="Creative Project 01" loading="lazy">
+          <div class="gallery-overlay">
+            <strong>Creative Project 01</strong>
+            <span>Lihat Foto ↗</span>
+          </div>
+        </button>
+
+        <button class="gallery-item reveal" type="button"
+          data-image="images/proyek2.jpg"
+          data-title="Creative Project 02"
+          aria-label="Lihat Creative Project 02">
+          <img src="proyek3.jpeg"
+            alt="Creative Project 02" loading="lazy">
+          <div class="gallery-overlay">
+            <strong>Creative Project 02</strong>
+            <span>Lihat Foto ↗</span>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- 1 VIDEO PROJECT -->
+      <div class="video-project-section">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">MY VIDEO WORK</span>
+          <h2>Video <span>Project</span></h2>
+          <p>
+            Karya video kreatif dengan rasio 16:9.
+            Video diputar secara manual.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card reveal">
+            <div class="video-wrapper">
+              <video controls preload="metadata"
+                playsinline poster="thumbnail2.png">
+                <source src="video2.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+              </video>
+            </div>
+
+            <div class="video-info">
+              <h3>Lelah Bukan Alasan Berhenti Belajar</h3>
+              <p>
+                Menceritakan tentang kelelahan yang merupakan salah satu proses belajar.
+              </p>
+              <div class="tags">
+                <span>Video Editing</span>
+                <span>Content Creation</span>
+                <span>Creative</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Contact <span>Me</span></h2>
+        <p>Mari terhubung, berdiskusi, dan berkolaborasi.</p>
+      </div>
+
+      <div class="contact-links reveal">
+        <!-- GANTI LINK DENGAN AKUN ANDA -->
+        <a href="https://instagram.com/revaldy_redy"
+          target="_blank" rel="noopener noreferrer"
+          class="contact-link">📸 Instagram</a>
+
+        <a href="mailto:revaldyrisqi123@gmail.com"
+          class="contact-link">✉️ Email</a>
+
+        <a href="https://linkedin.com/in/revaldy-risqi-firmansyah-1300b9441"
+          target="_blank" rel="noopener noreferrer"
+          class="contact-link">💼 LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX FOTO -->
+  <div id="lightbox" class="lightbox" role="dialog"
+    aria-modal="true" aria-label="Pratinjau foto" hidden>
+
+    <button id="closeLightbox" class="lightbox-close"
+      type="button" aria-label="Tutup">✕</button>
+
+    <button id="prevImage" class="lightbox-arrow"
+      type="button" aria-label="Foto sebelumnya">❮</button>
+
+    <div class="lightbox-content">
+      <img id="lightboxImage" alt="">
+      <p id="lightboxTitle"></p>
+      <span id="imageCounter"></span>
+    </div>
+
+    <button id="nextImage" class="lightbox-arrow"
+      type="button" aria-label="Foto berikutnya">❯</button>
+  </div>
+
+  <footer>
+    <p>
+      © <span id="year"></span>
+      Revaldy Risqi Firmansyah. All Rights Reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
